@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping-cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="products">
+    <div class="cart-to-choose">
+        <img id="t-shirt" src="/assets/t-shirt-blanc-maquette-serigraphie_125540-697.jpg" alt="t-shirt-blanc-maquette-serigraphie_125540-697">
+        <h1>Price in Dinars</h1>
+        <h3 id="t-shirt-price">40</h3>
+        <button id="btn-t-shirt" onclick="add('t-shirt','t-shirt-price')">+ Add to Cart</button>
+    </div>
+    <div class="cart-to-choose">
+        <img id="pantalon" src="/assets/fa81d626ff3cd31d990f26ff671488d0.jpg" alt="pantalon">
+        <h1>Price in Dinars</h1>
+        <h3 id="pantalon-price">90</h3>
+        <button id="btn-pantalon" onclick="add('pantalon','pantalon-price')">+ Add to Cart</button>
+    </div>
+    <div class="cart-to-choose">
+        <img id="boots" src="/assets/bottines-mode-homme-296x300.jpg" alt="bottines-mode-homme-296x300">
+        <h1>Price in Dinars</h1>
+        <h3 id="boots-price">120</h3>
+        <button id="btn-boots" onclick="add('boots','boots-price')">+ Add to Cart</button>
+    </div>
+</div>
+<div class="cart">
+            <img id="destination" src="" alt="">
+            <button onclick="plus()">+</button>
+            <span id="count">1</span>
+            <button onclick="moins()">-</button>
+            <h2>Total</h2>
+            <h1 id="total"></h1>
+        
+</div>
+    <script src="index.js" async></script>
+</body>
+</html>
